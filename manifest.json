@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "IP111 分流状态",
+  "version": "1.0.1",
+  "description": "按 ip111.cn 三路检测显示出口状态与谷歌测试国家，每15分钟更新。",
+  "permissions": [
+    "alarms",
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://ip111.cn/*",
+    "https://us.ip111.cn/*",
+    "https://sspanel.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "IP111 分流状态",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
